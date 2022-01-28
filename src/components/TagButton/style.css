@@ -1,0 +1,17 @@
+.tag-btn{
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 3rem 1rem 3rem 0;
+    padding: 0.6rem 1.3rem ;
+    cursor: pointer;
+    border-radius: 2rem;
+    border: none;
+}
+.tag-btn:hover{
+    background-color: #f03226;
+    color:#ffff;
+}
+.tag-btn:focus{
+    background-color: #f03226;
+    color:#ffff;
+}
