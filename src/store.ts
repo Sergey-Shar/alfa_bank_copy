@@ -1,11 +1,11 @@
-import { configureStore } from '@reduxjs/toolkit'
-import dateReducer from './slices/dateSlice'
+import { configureStore } from "@reduxjs/toolkit";
+import dataRateReducer from "./slices/dateSlice";
 
 export const store = configureStore({
   reducer: {
-   date: dateReducer,
+    dataRate: dataRateReducer,
   },
-})
+});
 
-export type RootState = ReturnType<typeof store.getState>
-export type AppDispatch = typeof store.dispatch
+export type RootState = ReturnType<typeof store.getState>;
+export type AppDispatch = typeof store.dispatch;

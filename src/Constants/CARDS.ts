@@ -1,6 +1,6 @@
 
-type TDomenName = string
-export const DOMEN_NAME: TDomenName = "https://www.alfabank.by/upload/resize_cache/webp/iblock/"
+type TBaseUrl = string
+export const BASE_URL: TBaseUrl = "https://www.alfabank.by/upload/resize_cache/webp/iblock/"
 
 interface CardState  {
   name?: string
@@ -21,7 +21,7 @@ export const CARDS: CardState[]  = [
     subTitle: "Выгодная карта на каждый день",
     list:"100 дней под 0,00000001% годовых",
     list2:"Любые покупки и снятие наличных",
-    image:`${DOMEN_NAME}794/kross.webp`
+    image:`${BASE_URL}794/kross.webp`
   },
   {
     name: 'Top',
@@ -29,7 +29,7 @@ export const CARDS: CardState[]  = [
     title:"Переводы с карты на карту" ,
     list:"Во все банки Беларуси и в 91 страну мира",
     list2:" 0% - на карты Альфа-Банка",
-    image:`${DOMEN_NAME}21f/trasfer-card2card.webp`
+    image:`${BASE_URL}21f/trasfer-card2card.webp`
   },
     { 
       name: 'Top',
@@ -38,7 +38,7 @@ export const CARDS: CardState[]  = [
       subTitle: "Деньги на любые цели всегда, когда нужно!",
       list:"Под 20,5% годовых",
       list2:"До 15 000 BYN",
-      image:`${DOMEN_NAME}bbd/credits-prosto-dengi.webp`
+      image:`${BASE_URL}bbd/credits-prosto-dengi.webp`
     },
     {
       name: 'Top',
@@ -46,7 +46,7 @@ export const CARDS: CardState[]  = [
       title:"Стиль и выгода с картами Пакетов решений" ,
       list:"Онлайн-оформление и бесплатная доставка",
       list2:"До 3 карт в нужной валюте",
-      image:`${DOMEN_NAME}733/ext.webp`
+      image:`${BASE_URL}733/ext.webp`
     },
     {
       name: 'Top',
@@ -55,14 +55,14 @@ export const CARDS: CardState[]  = [
       subTitle: "Зачиление зарплаты до 3-х минут",
       list:"Онлайн-оформление зарплатной карты",
       list2:"Новые возможности зарплатной карты",
-      image:`${DOMEN_NAME}d26/kross-zarplatniki.webp`
+      image:`${BASE_URL}d26/kross-zarplatniki.webp`
     },
     { 
       name: 'Top',
       id:6,
       title:"Инвистиции с Альфа-Банком" ,
       subTitle: "Начните инвистировать с нами",
-      image:`${DOMEN_NAME}120/prikaz.webp`
+      image:`${BASE_URL}120/prikaz.webp`
     },
     { 
       name: 'Credit',
@@ -71,7 +71,7 @@ export const CARDS: CardState[]  = [
       subTitle: "Выгодная карта на каждый день",
       list:"100 дней под 0,00000001% годовых",
       list2:"Любые покупки и снятие наличных",
-      image:`${DOMEN_NAME}794/kross.webp`
+      image:`${BASE_URL}794/kross.webp`
     },
     { 
       name: 'Credit',
@@ -80,7 +80,7 @@ export const CARDS: CardState[]  = [
       subTitle: "Деньги на любые цели всегда, когда нужно!",
       list:"Под 20,5% годовых",
       list2:"До 15 000 BYN",
-      image:`${DOMEN_NAME}bbd/credits-prosto-dengi.webp`
+      image:`${BASE_URL}bbd/credits-prosto-dengi.webp`
     },
     {
       name: 'Credit',
@@ -89,7 +89,7 @@ export const CARDS: CardState[]  = [
       subTitle:'Рассрочка везде, где принимают карты',
       list:"Любые покупки, включая акции и распродажи",
       list2:"Срок рассрочки выбираете вы",
-      image:`${DOMEN_NAME}1cf/krasnai-kross.webp`
+      image:`${BASE_URL}1cf/krasnai-kross.webp`
     },
     { 
       name: 'Credit',
@@ -98,7 +98,7 @@ export const CARDS: CardState[]  = [
       subTitle:"Большие деньги на большие мечты",
       list:"Под 30,4% годовых",
       list2:"До 30 000 BYN",
-      image:`${DOMEN_NAME}ffd/potreb.webp`
+      image:`${BASE_URL}ffd/potreb.webp`
     },
     {
       name: 'Credit',
@@ -107,14 +107,14 @@ export const CARDS: CardState[]  = [
       subTitle: "Выручит до зарплаты если, ноль на счете",
       list:"Оформление к любому счету в BYN",
       list2:"7 секунд в InSync - на рассмотрение",
-      image:`${DOMEN_NAME}cd3/kross-alfa-overdraft.webp`
+      image:`${BASE_URL}cd3/kross-alfa-overdraft.webp`
     },
     { 
       name: 'Credit',
       id:12,
       title:"Инвистиции с Альфа-Банком" ,
       subTitle: "Начните инвистировать с нами",
-      image:`${DOMEN_NAME}120/prikaz.webp`
+      image:`${BASE_URL}120/prikaz.webp`
     },
     { 
       name: 'Card',
@@ -122,7 +122,7 @@ export const CARDS: CardState[]  = [
       title:"Smart Gold" ,
       list:"Бесплатные карты уровня Gold",
       list2:"Выгодный курс обмена валют",
-      image:`${DOMEN_NAME}ca3/kross-gold-2.webp`
+      image:`${BASE_URL}ca3/kross-gold-2.webp`
     },
     { 
       name: 'Card',
@@ -130,14 +130,14 @@ export const CARDS: CardState[]  = [
       title:"Smart Platinum" ,
       list:"Бесплатные карты уровня Platinum",
       list2:"Альфа консьерж 24/7",
-      image:`${DOMEN_NAME}37e/kross-platinum-2.webp`
+      image:`${BASE_URL}37e/kross-platinum-2.webp`
     },
     { 
       name: 'Card',
       id:15,
       title:"Карта фудхантера" ,
       subTitle:`Установите цифровую обложку "Карта фудхантера" и получайте скидку 10% в любимых заведениях`,
-      image:`${DOMEN_NAME}11a/foodhunter_425_325.webp`
+      image:`${BASE_URL}11a/foodhunter_425_325.webp`
     },
     { 
       name: 'Card',
@@ -145,7 +145,7 @@ export const CARDS: CardState[]  = [
       title:"World of Tanks" ,
       list:"9 едениц золота за каждые потраченные 3 рубля",
       list2:"Дарим месяц премиум аккаунта",
-      image:`${DOMEN_NAME}412/top-product.webp`
+      image:`${BASE_URL}412/top-product.webp`
     },
     { 
       name: 'Card',
@@ -153,7 +153,7 @@ export const CARDS: CardState[]  = [
       title:"Alfa Cyber" ,
       list:"Скидки до 100% у паринеров",
       list2:"Твой никнейм на карте",
-      image:`${DOMEN_NAME}91e/cards-cyber.webp`
+      image:`${BASE_URL}91e/cards-cyber.webp`
     },
     { 
       name: 'Card',
@@ -161,7 +161,7 @@ export const CARDS: CardState[]  = [
       title:"AliExspress" ,
       list:"Манибэк до 5%",
       list2:"Возврат 100% стоимости товара на AliExspress (включая доставку)",
-      image:`${DOMEN_NAME}a60/razvod.webp`
+      image:`${BASE_URL}a60/razvod.webp`
     },
 ]
   

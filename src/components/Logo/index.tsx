@@ -1,10 +1,10 @@
 import { memo, FC, useCallback, useState } from "react";
-import { IMAGE } from "../../Constants/IMAGES"
+import { IMAGE } from "../../constants/IMAGES"
 import "./style.css";
 
 const Logo: FC = () => {
-  const [classNameImage, setClassNameImage] = useState("logo-img");
-  const [classNameText, setClassNameText] = useState("logo-text");
+  const [classNameImage, setClassNameImage] = useState<string>("logo-img");
+  const [classNameText, setClassNameText] = useState<string>("logo-text");
 
   const onHover = useCallback((): void => {
     setClassNameText("logo-text active");

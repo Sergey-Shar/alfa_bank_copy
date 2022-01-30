@@ -1,62 +1,37 @@
-import * as React from 'react';
-import Table from '@mui/material/Table';
-import TableBody from '@mui/material/TableBody';
-import TableCell from '@mui/material/TableCell';
-import TableContainer from '@mui/material/TableContainer';
-import TableHead from '@mui/material/TableHead';
-import TableRow from '@mui/material/TableRow';
-import Paper from '@mui/material/Paper';
-import { format } from "date-fns";
-import {useAppSelector} from '../../hooks'
-import {selectCards} from '../../slices/dateSlice'
+import { FC, memo, ReactChild, ReactNode } from "react";
+import Table from "@mui/material/Table";
+import TableBody from "@mui/material/TableBody";
+import TableContainer from "@mui/material/TableContainer";
+import TableHead from "@mui/material/TableHead";
+import TableRow from "@mui/material/TableRow";
+import Paper from "@mui/material/Paper";
 
-function createData(
-  name: string,
-  calories: number,
-  fat: number,
-  carbs: number,
-  protein: number,
-) {
-  return { name, calories, fat, carbs, protein };
+interface Props {
+  tableCell: ReactChild | ReactNode;
+  tableRow: ReactChild | ReactNode;
+  caption: ReactChild | ReactNode;
+  width?: number;
+  heigth?:number;
 }
 
-const rows = [
-  createData('Frozen yoghurt', 159, 6.0, 24, 4.0),
-  createData('Ice cream sandwich', 237, 9.0, 37, 4.3),
-  createData('Eclair', 262, 16.0, 24, 6.0),
-];
-
-export default function AcccessibleTable() {
-
-   const date = useAppSelector(selectCards)  
-
+const AcccessibleTable: FC<Props> = ({
+  tableCell,
+  tableRow,
+  caption,
+  width,
+  heigth,
+}) => {
   return (
-    <TableContainer component={Paper} sx={{ maxWidth: 850 }} >
-      <Table  sx={{ maxWidth: 850 }} aria-label="caption table">
-        <caption> Обновлены {format(new Date(), "dd.MM.yyyy")} </caption>
+    <TableContainer component={Paper} sx={{ maxWidth: width, height: heigth}}>
+      <Table sx={{ maxWidth: width}} aria-label="caption table">
+        {caption}
         <TableHead>
-          <TableRow>
-            <TableCell>Dessert (100g serving)</TableCell>
-            <TableCell align="right">Calories</TableCell>
-            <TableCell align="right">Fat&nbsp;(g)</TableCell>
-            <TableCell align="right">Carbs&nbsp;(g)</TableCell>
-            <TableCell align="right">Protein&nbsp;(g)</TableCell>
-          </TableRow>
+          <TableRow>{tableCell}</TableRow>
         </TableHead>
-        <TableBody>
-          {rows.map((row) => (
-            <TableRow key={row.name}>
-              <TableCell component="th" scope="row">
-                {row.name}
-              </TableCell>
-              <TableCell align="right">{row.calories}</TableCell>
-              <TableCell align="right">{row.fat}</TableCell>
-              <TableCell align="right">{row.carbs}</TableCell>
-              <TableCell align="right">{row.protein}</TableCell>
-            </TableRow>
-          ))}
-        </TableBody>
+        <TableBody>{tableRow}</TableBody>
       </Table>
     </TableContainer>
   );
-}
+};
+
+export default memo(AcccessibleTable);

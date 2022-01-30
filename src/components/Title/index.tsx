@@ -1,21 +1,18 @@
 import { Typography } from "@mui/material";
-import {FC, memo} from "react";
+import { FC, memo } from "react";
 
 interface ITextTitle {
-    textTitle: string
+  textTitle: string;
 }
 
-const Title: FC<ITextTitle> = ({textTitle}) => {
-    return(
-        <>
-          <Typography 
-          sx={{fontWeight:"900"}}
-          variant="h2" 
-          component="div">
-          {textTitle}
-          </Typography>
-        </>
-    )
-}
+const Title: FC<ITextTitle> = ({ textTitle }) => {
+  return (
+    <>
+      <Typography sx={{ fontWeight: "900" }} variant="h2" component="div">
+        {textTitle}
+      </Typography>
+    </>
+  );
+};
 
-export default memo(Title)
+export default memo(Title);

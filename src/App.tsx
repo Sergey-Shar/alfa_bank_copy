@@ -6,9 +6,7 @@ import { HashRouter } from "react-router-dom";
 import CssBaseline from '@mui/material/CssBaseline';
 import NavBar from "./components/NavBar";
 
-
-
-const Navigation: FC = () => {
+const App: FC = () => {
   return (
     <Router>
       {/* <HashRouter basename={process.env.PUBLIC_URL}> */}
@@ -27,4 +25,4 @@ const Navigation: FC = () => {
   );
 };
 
-export default memo(Navigation);
+export default memo(App);
