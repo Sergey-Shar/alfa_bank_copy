@@ -1,0 +1,33 @@
+.cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 40rem;
+  width: 30rem;
+  border-radius: 2rem;
+}
+
+.cards:hover {
+  background-color: #f03226;
+  color: #ffff;
+}
+.box-title {
+  margin: 2.5rem;
+  width: 25rem;
+}
+
+.title-cards {
+  font-size: 2.2rem;
+}
+
+.subtitle-cards,
+li {
+  margin: 0.7rem;
+}
+
+.ofer-card_image {
+  height: 20rem;
+  width: 28rem;
+  display: block;
+  object-fit: cover;
+}

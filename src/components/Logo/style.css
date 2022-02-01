@@ -1,0 +1,33 @@
+.box-logo {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  transform: translateX(7%);
+}
+
+.logo-img {
+  height: 4rem;
+  cursor: pointer;
+  transition: all 500ms ease;
+}
+
+.logo-img.active {
+  transform: translateX(-45%);
+  transition: all 500ms ease;
+}
+
+.logo-text {
+  opacity: 0;
+  height: 1.8rem;
+  width: 10rem;
+  margin-top: 1.2rem;
+  transform: translateX(-27%);
+  transition: all 500ms ease;
+  cursor: pointer;
+}
+
+.logo-text.active {
+  opacity: 1;
+  transition: all 500ms ease;
+  transform: translateX(-20%);
+}

@@ -1,0 +1,16 @@
+.footer-header {
+  display: flex;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.logo-footer {
+  height: 4rem;
+  cursor: pointer;
+}
+
+.logo-footer-text {
+  color: #f03226;
+  cursor: pointer;
+  font-size: 2rem;
+}
