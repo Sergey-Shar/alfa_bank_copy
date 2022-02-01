@@ -1,27 +1,47 @@
-import { memo, FC } from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import MainPage from "./pages/MainPage";
-import RatesDaily from "./pages/RatesDaily";
-import { HashRouter } from "react-router-dom";
-import CssBaseline from '@mui/material/CssBaseline';
-import NavBar from "./components/NavBar";
+import { useMemo, FC, memo, useState, useEffect } from "react";
+import { ThemeProvider, createTheme } from "@mui/material/styles";
+import Navigation from "./Navigation";
+import { ColorModeContext } from "./components/ToggleModeTheme";
 
 const App: FC = () => {
+  const [mode, setMode] = useState<"light" | "dark">("light");
+  const [main, setMain] = useState("rgb(245,245,247)");
+
+  const colorMode = useMemo(
+    () => ({
+      toggleColorMode: () => {
+        setMode((prevMode) => (prevMode === "light" ? "dark" : "light"));
+      },
+    }),
+    []
+  );
+
+  useEffect(() => {
+    mode === "dark" ? setMain("rgb(46,47,48)") : setMain("rgb(245,245,247)");
+  }, [mode]);
+
+  const theme = useMemo(
+    () =>
+      createTheme({
+        palette: {
+          primary: {
+            main: "hsla(0,0%,100%,0.8)",
+          },
+          secondary: {
+            main: main,
+          },
+          mode,
+        },
+      }),
+    [mode, main]
+  );
+
   return (
-    <Router>
-      {/* <HashRouter basename={process.env.PUBLIC_URL}> */}
-      <CssBaseline />
-      <NavBar/>
-          <Switch>
-            <Route path="/rates">
-              <RatesDaily />
-            </Route>
-            <Route path="/">
-              <MainPage />
-            </Route>
-          </Switch>
-      {/* </HashRouter> */}
-    </Router>
+    <ColorModeContext.Provider value={colorMode}>
+      <ThemeProvider theme={theme}>
+        <Navigation />
+      </ThemeProvider>
+    </ColorModeContext.Provider>
   );
 };
 

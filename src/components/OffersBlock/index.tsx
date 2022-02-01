@@ -20,7 +20,6 @@ const OffersBlock: FC = () => {
     <Container maxWidth="xl">
       <div style={{ marginTop: "5rem" }}>
         <Title textTitle="Лучшие предложения для тебя" />
-
         {button.map(({ id, name, data }) => {
           return (
             <TagButton

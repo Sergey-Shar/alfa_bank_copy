@@ -1,9 +1,9 @@
-.slider-box{
-    display: flex;
+.slider-box {
+  display: flex;
 }
 
-@media(max-width:760px){
-    .slider-box{
-        flex-direction: column;
-    }
+@media (max-width: 760px) {
+  .slider-box {
+    flex-direction: column;
+  }
 }

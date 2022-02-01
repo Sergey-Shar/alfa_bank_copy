@@ -1,16 +1,20 @@
 import { memo, FC } from "react";
 import { AppBar, Toolbar, Typography } from "@mui/material";
 import Logo from "../Logo";
-import IconBurger from "../IconButton";
+import TemporaryDrawer from "../Drawer";
 
 const NavBar: FC = () => {
   return (
-    <AppBar position="sticky" sx={{ backdropFilter: "blur(5px)" }}>
+    <AppBar
+      id="section1"
+      position="sticky"
+      sx={{ backdropFilter: "blur(5px)" }}
+    >
       <Toolbar>
         <Typography component="div" sx={{ flexGrow: 1 }}>
           <Logo />
         </Typography>
-        <IconBurger />
+        <TemporaryDrawer />
       </Toolbar>
     </AppBar>
   );

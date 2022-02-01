@@ -17,7 +17,7 @@ const initialState: DataRateState = {
   date: format(new Date(), "yyyy-MM-dd"),
   currentDate: format(new Date(), "dd.MM.yyyy"),
   data: [
-    { 
+    {
       Cur_ID: 0,
       Cur_Abbreviation: "",
       Cur_Scale: "",

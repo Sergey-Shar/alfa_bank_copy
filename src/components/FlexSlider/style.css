@@ -40,8 +40,8 @@
   transition: all 700ms ease;
 }
 
-@media(max-width:760px){
-  .slider-image{
-      width: 20rem;
+@media (max-width: 760px) {
+  .slider-image {
+    width: 20rem;
   }
 }

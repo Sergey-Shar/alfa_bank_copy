@@ -4,13 +4,13 @@ import FlexSliderBlock from "../components/FlexSliderBlock";
 import OffersBlock from "../components/OffersBlock";
 
 const MainPage: FC = () => {
-    return(
-        <>
-   <FlexSliderBlock/>
-   <OffersBlock/>
-   <ExchangeRateBlock/>
-   </>
-    )
-} 
+  return (
+    <>
+      <FlexSliderBlock />
+      <OffersBlock />
+      <ExchangeRateBlock />
+    </>
+  );
+};
 
-export default memo(MainPage)
+export default memo(MainPage);

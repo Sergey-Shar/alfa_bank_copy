@@ -11,7 +11,7 @@ interface Props {
   tableRow: ReactChild | ReactNode;
   caption: ReactChild | ReactNode;
   width?: number;
-  heigth?:number;
+  heigth?: number;
 }
 
 const AcccessibleTable: FC<Props> = ({
@@ -22,8 +22,8 @@ const AcccessibleTable: FC<Props> = ({
   heigth,
 }) => {
   return (
-    <TableContainer component={Paper} sx={{ maxWidth: width, height: heigth}}>
-      <Table sx={{ maxWidth: width}} aria-label="caption table">
+    <TableContainer component={Paper} sx={{ maxWidth: width, height: heigth }}>
+      <Table sx={{ maxWidth: width }} aria-label="caption table">
         {caption}
         <TableHead>
           <TableRow>{tableCell}</TableRow>

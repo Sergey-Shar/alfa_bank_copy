@@ -3,12 +3,20 @@ import { FC, memo } from "react";
 
 interface ITextTitle {
   textTitle: string;
+  color?: string;
+  hover?: string;
+  pointer?: string;
 }
 
-const Title: FC<ITextTitle> = ({ textTitle }) => {
+const Title: FC<ITextTitle> = ({ textTitle, color, hover, pointer }) => {
   return (
     <>
-      <Typography sx={{ fontWeight: "900" }} variant="h2" component="div">
+      <Typography
+        color={color}
+        sx={{ fontWeight: "900", cursor: pointer, ":hover": { color: hover } }}
+        variant="h2"
+        component="div"
+      >
         {textTitle}
       </Typography>
     </>

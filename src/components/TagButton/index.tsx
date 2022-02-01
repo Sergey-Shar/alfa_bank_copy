@@ -1,5 +1,6 @@
+import { Button } from "@mui/material";
 import { FC, memo } from "react";
-import "./style.css";
+import { TAG_BTN_STYLE } from "../../constants/TAG_BTN_STYLE";
 
 interface Props {
   text: string;
@@ -10,9 +11,15 @@ interface Props {
 
 const TagButton: FC<Props> = ({ text, id, onChangeCards, data }) => {
   return (
-    <button id={id} data-btn={data} onClick={onChangeCards} className="tag-btn">
+    <Button
+      color="inherit"
+      id={id}
+      data-btn={data}
+      onClick={onChangeCards}
+      sx={TAG_BTN_STYLE}
+    >
       {text}
-    </button>
+    </Button>
   );
 };
 export default memo(TagButton);

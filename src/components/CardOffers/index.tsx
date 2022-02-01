@@ -1,3 +1,4 @@
+import { Box } from "@mui/material";
 import { FC, memo, useCallback, useState } from "react";
 import "./style.css";
 
@@ -21,7 +22,12 @@ const CardOffers: FC<Props> = ({ title, subTitle, list, list2, image }) => {
   }, [setActive]);
 
   return (
-    <div onMouseOver={onHover} onMouseOut={onOutHover} className="cards">
+    <Box
+      sx={{ backgroundColor: "secondary.main" }}
+      onMouseOver={onHover}
+      onMouseOut={onOutHover}
+      className="cards"
+    >
       <div className="box-title">
         <h3
           style={{ color: active ? "#ffff" : "#f03226" }}
@@ -36,7 +42,7 @@ const CardOffers: FC<Props> = ({ title, subTitle, list, list2, image }) => {
         </ul>
       </div>
       <img src={image} alt="offersIcons" className="ofer-card_image" />
-    </div>
+    </Box>
   );
 };
 export default memo(CardOffers);

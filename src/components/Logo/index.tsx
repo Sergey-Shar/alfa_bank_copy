@@ -1,5 +1,6 @@
 import { memo, FC, useCallback, useState } from "react";
-import { IMAGE } from "../../constants/IMAGES"
+import { IMAGE } from "../../constants/IMAGES";
+import { Link } from "react-router-dom";
 import "./style.css";
 
 const Logo: FC = () => {
@@ -18,16 +19,12 @@ const Logo: FC = () => {
 
   return (
     <div onMouseOver={onHover} onMouseOut={onOutHover} className="box-logo">
-      <img
-        className={classNameImage}
-        src={IMAGE.logo}
-        alt="logo"
-      />
-      <img
-        className={classNameText}
-        src={IMAGE.logoText}
-        alt="logo"
-      />
+      <Link to={"/"}>
+        <img className={classNameImage} src={IMAGE.logo} alt="logo" />
+      </Link>
+      <Link to={"/"}>
+        <img className={classNameText} src={IMAGE.logoText} alt="logo" />
+      </Link>
     </div>
   );
 };

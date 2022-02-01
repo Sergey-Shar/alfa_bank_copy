@@ -1,19 +1,24 @@
-import { memo, FC } from "react";
+import { memo, FC, ReactChild, ReactNode } from "react";
 import { IconButton } from "@mui/material";
-import MenuIcon from "@mui/icons-material/Menu";
 
-const IconBurger: FC = () => {
+interface Props {
+  toggle?: (event: React.KeyboardEvent | React.MouseEvent) => void;
+  icon: ReactChild | ReactNode;
+  color?: string;
+}
+
+const IconBtn: FC<Props> = ({ toggle, icon }) => {
   return (
     <IconButton
       size="large"
       edge="end"
-      color="default"
-      aria-label="menu"
+      aria-label="open drawer"
       sx={{ mr: 2 }}
+      onClick={toggle}
     >
-      <MenuIcon />
+      {icon}
     </IconButton>
   );
 };
 
-export default memo(IconBurger);
+export default memo(IconBtn);
