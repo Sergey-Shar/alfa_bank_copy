@@ -13,7 +13,7 @@ import {
   selectloader,
   selectCurrentDate,
   selectError,
-} from "../../slices/dateSlice";
+} from "../../slices/dataRateSlice";
 import { FONT_SIZE } from "../../constants/FONT_SIZE_FOR_TABLE";
 import AttachMoneyIcon from "@mui/icons-material/AttachMoney";
 import EuroIcon from "@mui/icons-material/Euro";

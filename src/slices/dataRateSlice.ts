@@ -2,13 +2,13 @@ import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 import type { RootState } from "../store";
 import { format } from "date-fns";
 import { Post } from "../api/api";
-import { PostType } from "../types/PostTypes";
+import { PostRateType } from "../types/PostTypes";
 import { TDate } from "../types/DateType";
 
 interface DataRateState {
   date: TDate;
   currentDate: string;
-  data: PostType[];
+  data: PostRateType[];
   error: string;
   loader: boolean;
 }
@@ -35,7 +35,7 @@ export const dataRateSlice = createSlice({
     setChangeDate: (state, action: PayloadAction<string | Date | null>) => {
       state.date = action.payload;
     },
-    setData: (state, action: PayloadAction<PostType[]>) => {
+    setData: (state, action: PayloadAction<PostRateType[]>) => {
       state.data = action.payload;
     },
     setError: (state, action: PayloadAction<string>) => {

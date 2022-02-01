@@ -1,11 +1,9 @@
 import { memo, FC } from "react";
+import BusinessBlock from "../components/BusinessBlock";
 
 const BusinessPage: FC = () => {
     return(
-        <div>
-            Hello world!!!
-        </div>
+       <BusinessBlock/>
     )
 } 
-
 export default memo(BusinessPage)

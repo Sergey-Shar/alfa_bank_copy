@@ -1,5 +1,5 @@
 import axios, { AxiosResponse } from "axios";
-import { PostType } from "../types/PostTypes";
+import { PostRateType, PostCurrencies } from "../types/PostTypes";
 import { TDate } from "../types/DateType";
 
 const instance = axios.create({
@@ -17,6 +17,7 @@ export const requests = {
 };
 
 export const Post = {
-  getExangeRateById: (date: TDate, id?: number): Promise<PostType> =>
+  getExangeRateById: (date: TDate, id?: number): Promise<PostRateType> =>
     requests.get(`rates/${id}?ondate=${date}&periodicity=0`),
+  getAllCurrencies: (): Promise<PostCurrencies[]> => requests.get("currencies"),
 };
