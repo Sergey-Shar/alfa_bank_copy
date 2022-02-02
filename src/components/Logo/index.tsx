@@ -1,5 +1,5 @@
 import { memo, FC, useCallback, useState } from "react";
-import { IMAGE } from "../../constants/IMAGES";
+import { IMAGE } from "../../Constants/Images";
 import { Link } from "react-router-dom";
 import "./style.css";
 

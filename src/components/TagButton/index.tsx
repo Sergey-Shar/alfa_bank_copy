@@ -1,6 +1,6 @@
 import { Button } from "@mui/material";
 import { FC, memo } from "react";
-import { TAG_BTN_STYLE } from "../../constants/TAG_BTN_STYLE";
+import { TAG_BTN_STYLE } from "../../Constants/TagBtnTable";
 
 interface Props {
   text: string;

@@ -3,7 +3,7 @@ import { FC, memo, useState } from "react";
 import Title from "../Title";
 import CardOffersSwiper from "../CardOffersSwiper";
 import TagButton from "../TagButton";
-import { button } from "../../constants/TAG_BUTTON";
+import { button } from "../../Constants/TagButtons";
 
 type HTMLElementEvent<T extends HTMLElement> = Event & {
   target: T;

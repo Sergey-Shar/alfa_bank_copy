@@ -7,8 +7,8 @@ import {
 import { useAppSelector, useAppDispatch } from "../../hooks";
 import { Box, Container, TableCell, TableRow } from "@mui/material";
 import AcccessibleTable from "../Table";
-import { NAMES_TITLE_TABLE_CURRENCIES } from "../../constants/NAMES_TITLES_TABLES";
-import { FONT_SIZE } from "../../constants/FONT_SIZE_FOR_TABLE";
+import { NAMES_TITLE_TABLE_CURRENCIES } from '../../Constants/NamesTitlesTables';
+import { FONT_SIZE } from "../../Constants/SizeForTable";
 
 const BusinnessBlock: FC = () => {
   const dispatch = useAppDispatch();

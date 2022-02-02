@@ -1,6 +1,6 @@
 import { FC, memo } from "react";
 import { animateScroll as scroll } from "react-scroll";
-import { IMAGE } from "../../constants/IMAGES";
+import { IMAGE } from "../../Constants/Images";
 import "./style.css";
 
 const FooterHeader: FC = () => {
