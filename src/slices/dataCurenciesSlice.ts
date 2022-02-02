@@ -48,7 +48,6 @@ export const selectloader = (state: RootState) => state.dataCurrencies.loader;
 export const getCurrencies = () => async (dispatch: any) => {
   try {
     const currencies = await Post.getAllCurrencies();
-
     dispatch(setDataCurrencies(currencies));
     dispatch(setLoader(false));
   } catch (error: any) {
