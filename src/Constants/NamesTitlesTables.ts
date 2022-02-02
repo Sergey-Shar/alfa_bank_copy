@@ -1,4 +1,4 @@
-interface INamesTables {
+export  interface INamesTables {
   id: number;
   name: string;
 }

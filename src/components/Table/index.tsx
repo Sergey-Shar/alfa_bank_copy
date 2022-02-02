@@ -9,7 +9,7 @@ import Paper from "@mui/material/Paper";
 interface Props {
   tableCell: ReactChild | ReactNode;
   tableRow: ReactChild | ReactNode;
-  caption: ReactChild | ReactNode;
+  caption?: ReactChild | ReactNode;
   width?: number;
   heigth?: number;
 }
