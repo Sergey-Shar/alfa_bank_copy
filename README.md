@@ -2,13 +2,13 @@
 
 ## О проекте:
 
-![testwork example](./images/example1.png)
+![testwork example](./images/img1.png)
 
-![testwork example](./images/example2.png)
+![testwork example](./images/img2.png)
 
-![testwork example](./images/example3.png)
+![testwork example](./images/img3.png)
 
-![testwork example](./images/example4.png)
+![testwork example](./images/img4.png)
 
 Этот проект является частичной копией https://www.alfabank.by 
 
