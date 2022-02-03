@@ -3,7 +3,7 @@ import { Box, Container, ListItemIcon, TableRow } from "@mui/material";
 import StaticDatePickerLandscape from "../DatePicker";
 import { useAppSelector, useAppDispatch } from "../../hooks";
 import AcccessibleTable from "../Table";
-import { NAMES_TITLE_TABLE } from "../../Constants/NamesTitlesTables";
+import { NAMES_TITLE_TABLE } from "../../сonstants/NamesTitlesTables";
 import TableCell from "@mui/material/TableCell";
 import AlertMessage from "../Alert";
 import {
@@ -14,11 +14,11 @@ import {
   selectCurrentDate,
   selectError,
 } from "../../slices/dataRateSlice";
-import { FONT_SIZE } from "../../Constants/SizeForTable";
+import { FONT_SIZE } from "../../сonstants/SizeForTable";
 import AttachMoneyIcon from "@mui/icons-material/AttachMoney";
 import EuroIcon from "@mui/icons-material/Euro";
 import CurrencyRubleIcon from "@mui/icons-material/CurrencyRuble";
-import { EXENGE_BOX_STYLE } from "../../Constants/ExangeStyle";
+import { EXENGE_BOX_STYLE } from "../../сonstants/ExangeStyle";
 
 const ExchangeRate: FC = () => {
   const date = useAppSelector(selectDate);

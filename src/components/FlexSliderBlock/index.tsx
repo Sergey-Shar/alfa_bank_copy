@@ -1,6 +1,6 @@
 import { FC, memo } from "react";
 import FlexSlider from "../../components/FlexSlider";
-import { IMAGE } from "../../Constants/Images";
+import { IMAGE } from "../../сonstants/Images";
 import "./style.css";
 
 const FlexSliderBlock: FC = () => {

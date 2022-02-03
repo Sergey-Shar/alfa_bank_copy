@@ -10,10 +10,11 @@ import AcccessibleTable from "../Table";
 import {
   NAMES_TITLE_TABLE_CURRENCIES,
   INamesTables,
-} from "../../Constants/NamesTitlesTables";
-import { FONT_SIZE } from "../../Constants/SizeForTable";
+} from "../../сonstants/NamesTitlesTables";
+import { FONT_SIZE } from "../../сonstants/SizeForTable";
 import ProgressLoader from "../ProgressLoader";
 import { PostCurrencies } from "../../types/PostTypes";
+import Title from "../Title";
 
 const BusinnessBlock: FC = () => {
   const dispatch = useAppDispatch();
@@ -27,8 +28,13 @@ const BusinnessBlock: FC = () => {
   console.log(dataCurrencies);
 
   return (
-    <Container maxWidth="xl">
-      <Box sx={{ pt: 20 }}>
+    <Container maxWidth="xl" sx={{pt: 7}}>
+      <Title variant="h3"
+        textTitle={`Перечень иностранных валют, по отношению к которым
+        Национальный банк Республики Беларусь, устанавливает официальный 
+        курс беларусcкого рубля.`}
+      />
+      <Box sx={{ pt: 7 }}>
         <AcccessibleTable
           tableCell={NAMES_TITLE_TABLE_CURRENCIES.map((name: INamesTables) => (
             <TableCell sx={FONT_SIZE} key={name.id}>

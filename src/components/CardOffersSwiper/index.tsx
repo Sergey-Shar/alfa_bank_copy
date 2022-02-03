@@ -4,7 +4,7 @@ import CardOffers from "../CardOffers";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import { CARDS } from "../../Constants/Cards";
+import { CARDS } from "../../сonstants/Cards";
 import "./styles.css";
 
 import SwiperCore, { Navigation } from "swiper";
