@@ -1,12 +1,11 @@
 import { FC, memo } from "react";
-import Stack from "@mui/material/Stack";
-import CircularProgress from "@mui/material/CircularProgress";
+import { Box, LinearProgress } from "@mui/material";
 
 const ProgressLoader: FC = () => {
   return (
-    <Stack sx={{ color: "grey.500" }} spacing={2} direction="row">
-      <CircularProgress color="secondary" />
-    </Stack>
+    <Box sx={{ width: "100%", pt: 5 }}>
+      <LinearProgress color="error" />
+    </Box>
   );
 };
 

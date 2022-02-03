@@ -28,12 +28,14 @@ const BusinnessBlock: FC = () => {
   console.log(dataCurrencies);
 
   return (
-    <Container maxWidth="xl" sx={{pt: 7}}>
-      <Title variant="h3"
+    <Container maxWidth="xl" sx={{ pt: 7 }}>
+      <Title
+        variant="h3"
         textTitle={`Перечень иностранных валют, по отношению к которым
         Национальный банк Республики Беларусь, устанавливает официальный 
         курс беларусcкого рубля.`}
       />
+      {loader &&  <ProgressLoader />}
       <Box sx={{ pt: 7 }}>
         <AcccessibleTable
           tableCell={NAMES_TITLE_TABLE_CURRENCIES.map((name: INamesTables) => (
@@ -41,22 +43,16 @@ const BusinnessBlock: FC = () => {
               {name.name}
             </TableCell>
           ))}
-          tableRow={
-            !loader ? (
-              dataCurrencies.map((data: PostCurrencies) => (
-                <TableRow key={data.Cur_ID}>
-                  <TableCell component="th" scope="row">
-                    {data.Cur_Code}
-                  </TableCell>
-                  <TableCell align="right">{data.Cur_Name}</TableCell>
-                  <TableCell align="right">{data.Cur_Name_Eng}</TableCell>
-                  <TableCell align="right">{data.Cur_Scale}</TableCell>
-                </TableRow>
-              ))
-            ) : (
-              <ProgressLoader />
-            )
-          }
+          tableRow={dataCurrencies.map((data: PostCurrencies) => (
+            <TableRow key={data.Cur_ID}>
+              <TableCell component="th" scope="row">
+                {data.Cur_Code}
+              </TableCell>
+              <TableCell align="right">{data.Cur_Name}</TableCell>
+              <TableCell align="right">{data.Cur_Name_Eng}</TableCell>
+              <TableCell align="right">{data.Cur_Scale}</TableCell>
+            </TableRow>
+          ))}
         />
       </Box>
     </Container>
