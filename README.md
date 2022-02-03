@@ -38,7 +38,7 @@
 
 В тeкущей ветке вы можете ознакомиться с кодом.
 
-[Tут](https://sergey-shar.github.io/zen-car-project/) посмотреть на работу приложения в браузере.
+[Tут](https://alfa-react-application.firebaseapp.com/) посмотреть на работу приложения в браузере.
 
 Быстрый старт:
 
