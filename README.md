@@ -2,13 +2,6 @@
 
 ## О проекте:
 
-![testwork example](./images/img1.png)
-
-![testwork example](./images/img2.png)
-
-![testwork example](./images/img3.png)
-
-![testwork example](./images/img4.png)
 
 Этот проект является частичной копией https://www.alfabank.by 
 
@@ -41,6 +34,14 @@
 В тeкущей ветке вы можете ознакомиться с кодом.
 
 [Tут](https://alfa-react-application.firebaseapp.com/) посмотреть на работу приложения в браузере.
+
+![testwork example](./images/img1.png)
+
+![testwork example](./images/img2.png)
+
+![testwork example](./images/img3.png)
+
+![testwork example](./images/img4.png)
 
 Быстрый старт:
 
