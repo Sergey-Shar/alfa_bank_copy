@@ -5,7 +5,7 @@ import { Post } from "../api/api";
 import { PostRateType } from "../types/PostTypes";
 import { TDate } from "../types/DateType";
 
-interface DataRateState {
+ export  interface DataRateState {
   date: TDate;
   currentDate: string;
   data: PostRateType[];
@@ -13,7 +13,7 @@ interface DataRateState {
   loader: boolean;
 }
 
-const initialState: DataRateState = {
+ const initialState: DataRateState = {
   date: format(new Date(), "yyyy-MM-dd"),
   currentDate: format(new Date(), "dd.MM.yyyy"),
   data: [
