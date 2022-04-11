@@ -62,6 +62,11 @@
 ```
   yarn start
 ```
+11:45 
+https://us05web.zoom.us/j/2065884212?pwd=aEJYRjhkdzhkNEs3UmY3bkx5UlhVUT09
+
+12:00
+https://us05web.zoom.us/j/2065884212?pwd=aEJYRjhkdzhkNEs3UmY3bkx5UlhVUT09
 
 
 
