@@ -62,11 +62,9 @@
 ```
   yarn start
 ```
-11:45 
-https://us05web.zoom.us/j/2065884212?pwd=aEJYRjhkdzhkNEs3UmY3bkx5UlhVUT09
+https://mui.com/store/legal/mui-x-eula/
 
-12:00
-https://us05web.zoom.us/j/2065884212?pwd=aEJYRjhkdzhkNEs3UmY3bkx5UlhVUT09
+https://mui.com/store/items/material-ui-pro/
 
 
 
