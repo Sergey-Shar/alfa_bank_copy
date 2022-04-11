@@ -62,9 +62,7 @@
 ```
   yarn start
 ```
-https://mui.com/store/legal/mui-x-eula/
 
-https://mui.com/store/items/material-ui-pro/
 
 
 
