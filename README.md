@@ -63,8 +63,10 @@
   yarn start
 ```
 
-https://us05web.zoom.us/j/2065884212?pwd=aEJYRjhkdzhkNEs3UmY3bkx5UlhVUT09
+
 
 https://us05web.zoom.us/j/2065884212?pwd=aEJYRjhkdzhkNEs3UmY3bkx5UlhVUT09
+
+https://zoom.us/j/9910114765?pwd=ZEFtRzNCUnRoUXR6NEJVdzJhTVcrUT09
 
 
