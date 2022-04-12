@@ -64,14 +64,6 @@
 ```
 
 
-Sergej Sharuha - [BULK] Íàïîìèíàíèå î ìåðîïðèÿòèè "Âëèÿíèå áåç êîíôëèêòîâ. 1-é óðîâåíü ìàñòåðñòâà."
-<NDL>
-<REPLICA 432587D6:0038CD65>
-<VIEW OF81126279:5B7174B9-ONC32572F2:002639B4>
-<NOTE OF964D25D9:7F71ED05-ON873F82C7:6933976E>
-<HINT>   mail11.itibank.by/</HINT>
-<REM>Database 'Sergej Sharuha', View 'Âõîäÿùèå', Document '[BULK] Íàïîìèíàíèå î ìåðîïðèÿòèè "Âëèÿíèå áåç êîíôëèêòîâ. 1-é óðîâåíü ìàñòåðñòâà."'</REM>
-</NDL>
-
+https://events.webinar.ru/51804865/10828031/f2d03c9f8ab7a1de268b1fa95ac3603f
 
 
