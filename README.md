@@ -64,6 +64,5 @@
 ```
 
 
-https://events.webinar.ru/51804865/10828031/f2d03c9f8ab7a1de268b1fa95ac3603f
 
 
