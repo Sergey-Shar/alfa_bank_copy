@@ -63,7 +63,7 @@
   yarn start
 ```
 
-https://us05web.zoom.us/j/7080774352?pwd=NUp4WVExcTZPWThRWHlyeW0yamNhQT09
+
 
 
 
