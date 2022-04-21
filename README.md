@@ -48,7 +48,7 @@
 - Склонировать репозиторий
 
 ```
-  git clone
+  git clone https://github.com/Sergey-Shar/alfa_bank_copy.git
 ```
 
 - Установить зависимости
