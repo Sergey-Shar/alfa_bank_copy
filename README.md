@@ -5,9 +5,9 @@
 
 Этот проект является частичной копией https://www.alfabank.by 
 
-При разработке данного Pet project, моей целью было потренироваться в написаний кода с помощью TypeScript, а так же разделение бизнес логики и UI компанентов с помощью [Redux-Toolkit](https://redux-toolkit.js.org/) и [Redux-Thunk](https://github.com/reduxjs/redux-thunk)
+При разработке данного Pet project, моей целью было потренироваться в написаний кода с помощью TypeScript, а так же разделение бизнес логики и UI компонентов с помощью [Redux-Toolkit](https://redux-toolkit.js.org/) и [Redux-Thunk](https://github.com/reduxjs/redux-thunk)
 
-Для создания UI компанентов я изпользовал библиотеку [Material-UI](https://mui.com/)
+Для создания UI компонентов я изпользовал библиотеку [Material-UI](https://mui.com/)
 
 Данные о актульных курсах валют предоставляет открытый API Национального банка Республики Беларусь.
 
