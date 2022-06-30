@@ -1,19 +1,20 @@
 # Alfa App
 
-## О проекте:
+## About Project:
 
+[demo](https://alfa-react-application.firebaseapp.com/)
 
-Этот проект является частичной копией https://www.alfabank.by 
+This project is a partial copy: https://www.alfabank.by 
 
-При разработке данного Pet project, моей целью было потренироваться в работе с кодом с помощью TypeScript, а так же разделение бизнес логики и UI компонентов с помощью [Redux-Toolkit](https://redux-toolkit.js.org/) и [Redux-Thunk](https://github.com/reduxjs/redux-thunk)
+When developing this Pet project, my goal was to practice working with code using TypeScript, as well as separating business logic and UI components using [Redux-Toolkit](https://redux-toolkit.js.org /) and [Redux-Thunk](https://github.com/reduxjs/redux-thunk )
 
-Для создания UI компонентов я изпользовал библиотеку [Material-UI](https://mui.com/)
+To create UI components, I used the library [Material-UI](https://mui.com/)
 
-Данные об актуальных  курсах валют предоставляет открытый API Национального банка Республики Беларусь.
+Data on current exchange rates is provided by the open API of the National Bank of the Republic of Belarus.
 
-Деплой проекта я реализовал на хостинге [Firebase](https://firebase.google.com/)
+I implemented the deployment of the project on the hosting [Firebase](https://firebase.google.com/)
 
-### Для разработки приложения я использовал следующие инструменты:
+### To develop the application, I used the following tools:
 
 - [React.js](https://reactjs.org/)
 
@@ -31,9 +32,8 @@
 
 - [Material-UI](https://mui.com/)
 
-В настоящей ветке вы можете ознакомиться с кодом.
 
-[Tут](https://alfa-react-application.firebaseapp.com/) посмотреть на работу приложения в браузере.
+
 
 ![testwork example](./images/img1.png)
 
@@ -43,21 +43,21 @@
 
 ![testwork example](./images/img4.png)
 
-Быстрый старт:
+Quick start:
 
-- Склонировать репозиторий
+- Clone
 
 ```
   git clone https://github.com/Sergey-Shar/alfa_bank_copy.git
 ```
 
-- Установить зависимости
+- Installing dependencies
 
 ```
   yarn install
 ```
 
-- Запустить проект
+- Start project
 
 ```
   yarn start
