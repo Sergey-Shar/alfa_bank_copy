@@ -63,7 +63,7 @@ Quick start:
   yarn start
 ```
 
-https://us05web.zoom.us/j/6696243572?pwd=NmR1TWgrMnZUOVB2SXRyb1lFdGtYZz09
+
 
 
 
